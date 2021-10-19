@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Test Compose</string>
+    <string name="title_activity_card">CardActivity</string>
+</resources>

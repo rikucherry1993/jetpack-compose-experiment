@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TestCompose">
         <activity
+            android:name=".StylingText"
+            android:exported="false"
+            android:label="@string/title_activity_styling_text"
+            android:theme="@style/Theme.TestCompose.NoActionBar" />
+        <activity
             android:name=".CardActivity"
             android:exported="false"
             android:label="@string/title_activity_card"

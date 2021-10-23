@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TestCompose">
         <activity
+            android:name=".MaterialTextFieldActivity"
+            android:exported="false"
+            android:label="@string/title_activity_material_text_field"
+            android:theme="@style/Theme.TestCompose.NoActionBar" />
+        <activity
             android:name=".SaveStateActivity"
             android:exported="false"
             android:label="@string/title_activity_save_state"

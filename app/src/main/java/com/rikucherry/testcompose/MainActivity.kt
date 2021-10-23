@@ -75,6 +75,18 @@ class MainActivity : ComponentActivity() {
                         fontSize = 20.sp
                     )
                 }
+
+                Button(
+                    enabled = true,
+                    onClick = {
+                        intent = Intent(this@MainActivity, MaterialTextFieldActivity::class.java)
+                        startActivity(intent)
+                    }) {
+                    Text(text = "Text Field",
+                        modifier = Modifier.padding(5.dp),
+                        fontSize = 20.sp
+                    )
+                }
             }
         }
     }

@@ -87,6 +87,18 @@ class MainActivity : ComponentActivity() {
                         fontSize = 20.sp
                     )
                 }
+
+                Button(
+                    enabled = true,
+                    onClick = {
+                        intent = Intent(this@MainActivity, LisyActivity::class.java)
+                        startActivity(intent)
+                    }) {
+                    Text(text = "Lists",
+                        modifier = Modifier.padding(5.dp),
+                        fontSize = 20.sp
+                    )
+                }
             }
         }
     }

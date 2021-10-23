@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TestCompose">
         <activity
+            android:name=".SaveStateActivity"
+            android:exported="false"
+            android:label="@string/title_activity_save_state"
+            android:theme="@style/Theme.TestCompose.NoActionBar" />
+        <activity
             android:name=".StylingText"
             android:exported="false"
             android:label="@string/title_activity_styling_text"

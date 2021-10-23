@@ -26,9 +26,10 @@ class MainActivity : ComponentActivity() {
             //note:Modifier内部参数是顺次执行的，顺序会影响效果
             Column(
                 Modifier
-                    .background(Color.Yellow)
+                    .background(Color.Gray)
+                    .fillMaxWidth()
                     .width(200.dp)
-                    .height(300.dp),
+                    .height(400.dp),
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.SpaceEvenly
             ) {
@@ -58,6 +59,18 @@ class MainActivity : ComponentActivity() {
                         startActivity(intent)
                     }) {
                     Text(text = "Styling Text",
+                        modifier = Modifier.padding(5.dp),
+                        fontSize = 20.sp
+                    )
+                }
+
+                Button(
+                    enabled = true,
+                    onClick = {
+                        intent = Intent(this@MainActivity, SaveStateActivity::class.java)
+                        startActivity(intent)
+                    }) {
+                    Text(text = "Save State",
                         modifier = Modifier.padding(5.dp),
                         fontSize = 20.sp
                     )
